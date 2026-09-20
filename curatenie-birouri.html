@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Curățenie Birouri | EcoClean</title>
+
+    <meta
+        name="description"
+        content="Servicii profesionale de curățenie pentru birouri oferite de EcoClean. Spații de lucru curate, igienizate și plăcute."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =====================================================
+           PAGINA CURĂȚENIE BIROURI
+           ===================================================== */
+
+        .service-page-hero {
+            min-height: 650px;
+            padding: 150px 6% 100px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(8, 36, 26, 0.94),
+                    rgba(8, 36, 26, 0.72),
+                    rgba(8, 36, 26, 0.30)
+                ),
+                url("images/birouri.jpg") center/cover no-repeat;
+
+            background-color: #123b2d;
+        }
+
+        .service-page-hero-content {
+            position: relative;
+            z-index: 2;
+
+            max-width: 780px;
+
+            color: white;
+        }
+
+        .service-page-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 9px 16px;
+            margin-bottom: 22px;
+
+            border-radius: 50px;
+
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.20);
+
+            font-size: 13px;
+            font-weight: 700;
+
+            backdrop-filter: blur(8px);
+        }
+
+        .service-page-hero h1 {
+            font-size: clamp(45px, 6vw, 75px);
+            line-height: 1;
+            letter-spacing: -3px;
+
+            margin-bottom: 25px;
+        }
+
+        .service-page-hero h1 span {
+            color: #58d99d;
+        }
+
+        .service-page-hero p {
+            max-width: 650px;
+
+            color: rgba(255, 255, 255, 0.85);
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            margin-bottom: 30px;
+        }
+
+        .service-page-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .service-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 15px 27px;
+
+            border-radius: 50px;
+
+            background: #22a96f;
+            color: white;
+
+            font-weight: 800;
+
+            transition: 0.3s ease;
+        }
+
+        .service-btn-primary:hover {
+            background: white;
+            color: #123b2d;
+
+            transform: translateY(-3px);
+        }
+
+        .service-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 15px 27px;
+
+            border-radius: 50px;
+
+            background: rgba(255, 255, 255, 0.10);
+            color: white;
+
+            border: 1px solid rgba(255, 255, 255, 0.30);
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .service-btn-secondary:hover {
+            background: white;
+            color: #123b2d;
+        }
+
+
+        /* =====================================================
+           INTRODUCERE
+           ===================================================== */
+
+        .service-intro {
+            padding: 110px 6%;
+
+            background: white;
+        }
+
+        .service-intro-container {
+            max-width: 1150px;
+
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .service-intro-content h2 {
+            color: #123b2d;
+
+            font-size: clamp(35px, 4vw, 54px);
+
+            line-height: 1.08;
+
+            margin-bottom: 23px;
+        }
+
+        .service-intro-content h2 span {
+            color: #16845b;
+        }
+
+        .service-intro-content p {
+            color: #687570;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            margin-bottom: 17px;
+        }
+
+        .service-intro-image {
+            min-height: 430px;
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    rgba(18, 59, 45, 0.08),
+                    rgba(18, 59, 45, 0.08)
+                ),
+                url("images/birouri-2.jpg") center/cover no-repeat;
+
+            background-color: #e4f1eb;
+        }
+
+
+        /* =====================================================
+           CE INCLUDE
+           ===================================================== */
+
+        .included-section {
+            padding: 110px 6%;
+
+            background: #f4f9f6;
+        }
+
+        .included-container {
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+        .included-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .included-card {
+            padding: 30px;
+
+            background: white;
+
+            border: 1px solid #dfe9e4;
+
+            border-radius: 22px;
+
+            transition: 0.3s ease;
+        }
+
+        .included-card:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 18px 45px
+                rgba(18, 59, 45, 0.10);
+        }
+
+        .included-icon {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 20px;
+
+            border-radius: 16px;
+
+            background: #e8f6ef;
+
+            font-size: 26px;
+        }
+
+        .included-card h3 {
+            color: #123b2d;
+
+            font-size: 20px;
+
+            margin-bottom: 10px;
+        }
+
+        .included-card p {
+            color: #687570;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           AVANTAJE
+           ===================================================== */
+
+        .benefits-section {
+            padding: 110px 6%;
+
+            background: white;
+        }
+
+        .benefits-container {
+            max-width: 1150px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                0.9fr 1.1fr;
+
+            gap: 75px;
+
+            align-items: center;
+        }
+
+        .benefits-image {
+            min-height: 500px;
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    rgba(18, 59, 45, 0.12),
+                    rgba(18, 59, 45, 0.12)
+                ),
+                url("images/birouri-3.jpg") center/cover no-repeat;
+
+            background-color: #e4f1eb;
+        }
+
+        .benefits-content h2 {
+            color: #123b2d;
+
+            font-size: clamp(34px, 4vw, 52px);
+
+            line-height: 1.1;
+
+            margin-bottom: 25px;
+        }
+
+        .benefits-content h2 span {
+            color: #16845b;
+        }
+
+        .benefit-list {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 17px;
+        }
+
+        .benefit-item {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 14px;
+        }
+
+        .benefit-check {
+            width: 30px;
+            height: 30px;
+
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #e8f6ef;
+
+            color: #16845b;
+
+            font-weight: 900;
+        }
+
+        .benefit-item h3 {
+            color: #123b2d;
+
+            font-size: 16px;
+
+            margin-bottom: 3px;
+        }
+
+        .benefit-item p {
+            color: #687570;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           PROCES
+           ===================================================== */
+
+        .process-section {
+            padding: 110px 6%;
+
+            background: #f4f9f6;
+        }
+
+        .process-container {
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .process-card {
+            position: relative;
+
+            padding: 30px;
+
+            background: white;
+
+            border-radius: 22px;
+
+            border: 1px solid #dfe9e4;
+        }
+
+        .process-number {
+            color: #dcebe4;
+
+            font-size: 45px;
+
+            font-weight: 900;
+
+            line-height: 1;
+
+            margin-bottom: 18px;
+        }
+
+        .process-card h3 {
+            color: #123b2d;
+
+            font-size: 19px;
+
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #687570;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           CTA PAGINA
+           ===================================================== */
+
+        .service-cta {
+            margin: 0 6% 100px;
+
+            border-radius: 32px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #123b2d,
+                    #176c4d
+                );
+
+            color: white;
+
+            overflow: hidden;
+        }
+
+        .service-cta-container {
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 80px 25px;
+
+            text-align: center;
+        }
+
+        .service-cta h2 {
+            font-size: clamp(34px, 5vw, 55px);
+
+            line-height: 1.08;
+
+            margin-bottom: 20px;
+        }
+
+        .service-cta h2 span {
+            color: #62e1a3;
+        }
+
+        .service-cta p {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: rgba(255, 255, 255, 0.78);
+
+            font-size: 16px;
+        }
+
+        .service-cta-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 30px;
+
+            padding: 15px 28px;
+
+            border-radius: 50px;
+
+            background: white;
+
+            color: #123b2d;
+
+            font-weight: 800;
+
+            transition: 0.3s ease;
+        }
+
+        .service-cta-button:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 15px 30px
+                rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+           ===================================================== */
+
+        @media (max-width: 950px) {
+
+            .included-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .service-intro-container,
+            .benefits-container {
+                grid-template-columns: 1fr;
+
+                gap: 45px;
+            }
+
+            .service-intro-image {
+                min-height: 400px;
+            }
+
+            .benefits-image {
+                min-height: 400px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .service-page-hero {
+                min-height: 700px;
+
+                padding:
+                    120px 20px
+                    80px;
+
+                background:
+                    linear-gradient(
+                        90deg,
+                        rgba(8, 36, 26, 0.94),
+                        rgba(8, 36, 26, 0.65)
+                    ),
+                    url("images/birouri.jpg")
+                    center/cover no-repeat;
+            }
+
+            .service-page-hero h1 {
+                font-size: 47px;
+
+                letter-spacing: -2px;
+            }
+
+            .service-page-hero p {
+                font-size: 16px;
+            }
+
+            .service-page-buttons {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .service-intro,
+            .included-section,
+            .benefits-section,
+            .process-section {
+                padding:
+                    80px 20px;
+            }
+
+            .service-intro-image,
+            .benefits-image {
+                min-height: 330px;
+            }
+
+            .included-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-cta {
+                margin:
+                    0 20px
+                    80px;
+            }
+
+            .service-cta-container {
+                padding:
+                    60px 20px;
+            }
+
+            .service-cta h2 {
+                font-size: 37px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Eco<span>Clean</span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html#acasa">
+                    Acasă
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#servicii">
+                    Servicii
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#despre-noi">
+                    Despre noi
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact" class="btn-nav">
+                    Cere ofertă
+                </a>
+            </li>
+
+        </ul>
+
+        <button
+            class="mobile-menu-btn"
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Deschide meniul"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <header class="service-page-hero">
+
+        <div class="service-page-hero-content">
+
+            <span class="service-page-badge">
+                🏢 Curățenie profesională pentru birouri
+            </span>
+
+            <h1>
+                Un birou curat.<br>
+                <span>O echipă mai eficientă.</span>
+            </h1>
+
+            <p>
+                Oferim servicii profesionale de curățenie pentru
+                birouri și spații de lucru, adaptate programului
+                și nevoilor companiei tale.
+            </p>
+
+            <div class="service-page-buttons">
+
+                <a
+                    href="index.html#contact"
+                    class="service-btn-primary"
+                >
+                    Solicită o ofertă
+                </a>
+
+                <a
+                    href="tel:0700000000"
+                    class="service-btn-secondary"
+                >
+                    📞 0700 000 000
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         INTRODUCERE
+         ===================================================== -->
+
+    <section class="service-intro">
+
+        <div class="service-intro-container">
+
+            <div class="service-intro-content">
+
+                <span class="section-label">
+                    CURĂȚENIE BIROURI
+                </span>
+
+                <h2>
+                    Un spațiu curat creează
+                    <span>un mediu mai plăcut.</span>
+                </h2>
+
+                <p>
+                    Biroul este locul în care echipa ta își
+                    petrece o mare parte din zi. De aceea,
+                    curățenia și igiena spațiului de lucru
+                    sunt importante pentru confortul tuturor.
+                </p>
+
+                <p>
+                    EcoClean oferă servicii de curățenie
+                    pentru birouri, adaptate dimensiunii
+                    spațiului și programului companiei tale.
+                </p>
+
+                <p>
+                    Ne ocupăm de zonele de lucru, spațiile
+                    comune și suprafețele care necesită
+                    întreținere regulată.
+                </p>
+
+            </div>
+
+            <div class="service-intro-image"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CE INCLUDE SERVICIUL
+         ===================================================== -->
+
+    <section class="included-section">
+
+        <div class="included-container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SERVICIUL NOSTRU
+                </span>
+
+                <h2>
+                    Ce include curățenia
+                    <span>pentru birouri?</span>
+                </h2>
+
+                <p>
+                    Ne adaptăm serviciile în funcție de
+                    suprafața și necesitățile spațiului.
+                </p>
+
+            </div>
+
+
+            <div class="included-grid">
+
+                <div class="included-card">
+
+                    <div class="included-icon">
+                        🧹
+                    </div>
+
+                    <h3>
+                        Aspirare și spălare
+                    </h3>
+
+                    <p>
+                        Curățarea pardoselilor și a
+                        suprafețelor de trafic pentru
+                        un spațiu permanent îngrijit.
+                    </p>
+
+                </div>
+
+
+                <div class="included-card">
+
+                    <div class="included-icon">
+                        🪟
+                    </div>
+
+                    <h3>
+                        Geamuri și suprafețe
+                    </h3>
+
+                    <p>
+                        Întreținerea suprafețelor vitrate,
+                        mobilierului și zonelor expuse
+                        utilizării zilnice.
+                    </p>
+
+                </div>
+
+
+                <div class="included-card">
+
+                    <div class="included-icon">
+                        🧴
+                    </div>
+
+                    <h3>
+                        Igienizare
+                    </h3>
+
+                    <p>
+                        Acordăm atenție zonelor care necesită
+                        igienizare și întreținere regulată.
+                    </p>
+
+                </div>
+
+
+                <div class="included-card">
+
+                    <div class="included-icon">
+                        🗑️
+                    </div>
+
+                    <h3>
+                        Colectarea deșeurilor
+                    </h3>
+
+                    <p>
+                        Golirea coșurilor și menținerea
+                        zonelor de lucru curate și organizate.
+                    </p>
+
+                </div>
+
+
+                <div class="included-card">
+
+                    <div class="included-icon">
+                        🚻
+                    </div>
+
+                    <h3>
+                        Grupuri sanitare
+                    </h3>
+
+                    <p>
+                        Curățarea și întreținerea grupurilor
+                        sanitare pentru un nivel ridicat
+                        de igienă.
+                    </p>
+
+                </div>
+
+
+                <div class="included-card">
+
+                    <div class="included-icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        Întreținere generală
+                    </h3>
+
+                    <p>
+                        Menținem aspectul general al biroului
+                        curat, ordonat și plăcut.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AVANTAJE
+         ===================================================== -->
+
+    <section class="benefits-section">
+
+        <div class="benefits-container">
+
+            <div class="benefits-image"></div>
+
+
+            <div class="benefits-content">
+
+                <span class="section-label">
+                    DE CE ECOCLEAN?
+                </span>
+
+                <h2>
+                    Curățenie fără să
+                    <span>întrerupi activitatea.</span>
+                </h2>
+
+
+                <div class="benefit-list">
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-check">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>
+                                Program flexibil
+                            </h3>
+
+                            <p>
+                                Putem stabili programul de lucru
+                                în funcție de activitatea
+                                companiei tale.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-check">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>
+                                Atenție la detalii
+                            </h3>
+
+                            <p>
+                                Punem accent pe zonele care sunt
+                                utilizate zilnic și necesită
+                                întreținere constantă.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-check">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>
+                                Serviciu personalizat
+                            </h3>
+
+                            <p>
+                                Oferta poate fi adaptată în
+                                funcție de dimensiunea și
+                                necesitățile spațiului.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-check">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>
+                                Seriozitate și punctualitate
+                            </h3>
+
+                            <p>
+                                Ne respectăm programul stabilit
+                                și tratăm fiecare spațiu cu
+                                responsabilitate.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCES
+         ===================================================== -->
+
+    <section class="process-section">
+
+        <div class="process-container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    CUM LUCRĂM
+                </span>
+
+                <h2>
+                    Simplu, rapid și
+                    <span>profesionist.</span>
+                </h2>
+
+                <p>
+                    De la prima discuție până la finalizarea
+                    serviciului, ne concentrăm pe nevoile tale.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Ne contactezi
+                    </h3>
+
+                    <p>
+                        Ne spui câteva detalii despre birou
+                        și despre serviciile de care ai nevoie.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Stabilim detaliile
+                    </h3>
+
+                    <p>
+                        Discutăm suprafața, frecvența,
+                        programul și cerințele spațiului.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Primești oferta
+                    </h3>
+
+                    <p>
+                        Îți pregătim o ofertă adaptată
+                        serviciilor solicitate.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Ne ocupăm de curățenie
+                    </h3>
+
+                    <p>
+                        Echipa EcoClean se ocupă de spațiul
+                        tău conform celor stabilite.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section class="service-cta">
+
+        <div class="service-cta-container">
+
+            <h2>
+                Vrei un birou mereu
+                <span>curat și îngrijit?</span>
+            </h2>
+
+            <p>
+                Contactează-ne și spune-ne de ce ai nevoie.
+                Îți pregătim o ofertă personalizată pentru
+                spațiul tău.
+            </p>
+
+            <a
+                href="index.html#contact"
+                class="service-cta-button"
+            >
+                📩 Cere o ofertă
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHATSAPP
+         ===================================================== -->
+
+    <a
+        href="https://wa.me/40700000000"
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactează-ne pe WhatsApp"
+        title="Contactează-ne pe WhatsApp"
+    >
+        <span>💬</span>
+    </a>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Eco<span>Clean</span>
+                </a>
+
+                <p>
+                    Servicii profesionale de curățenie
+                    pentru un spațiu în care îți face
+                    plăcere să fii.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navigare
+                </h3>
+
+                <a href="index.html#acasa">
+                    Acasă
+                </a>
+
+                <a href="index.html#servicii">
+                    Servicii
+                </a>
+
+                <a href="index.html#despre-noi">
+                    Despre noi
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Servicii
+                </h3>
+
+                <a href="curatenie-birouri.html">
+                    Birouri
+                </a>
+
+                <a href="parcuri-logistice.html">
+                    Parcuri logistice
+                </a>
+
+                <a href="depozite.html">
+                    Depozite
+                </a>
+
+                <a href="curatenie-santier.html">
+                    După constructor
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 0700 000 000
+                </p>
+
+                <p>
+                    ✉️ contact@ecoclean.ro
+                </p>
+
+                <p>
+                    📍 București și împrejurimi
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EcoClean. Toate drepturile rezervate.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
