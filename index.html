@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <title>EcoClean | Servicii Profesionale de Curățenie</title>
-<meta name="description" content="EcoClean oferă servicii profesionale de curățenie pentru locuințe, birouri și spații comerciale. Solicită o ofertă personalizată.">
+
+<meta name="description"
+    content="EcoClean oferă servicii profesionale de curățenie pentru birouri, parcuri logistice, depozite și spații după constructor. Solicită o ofertă personalizată.">
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,6 +18,7 @@
 </head>
 
 <body>
+
 
 <!-- ================= NAVBAR ================= -->
 
@@ -29,20 +34,8 @@
             <a href="#acasa">Acasă</a>
         </li>
 
-        <li class="dropdown">
-            <a href="#servicii" class="dropbtn">
-                Servicii <span>⌄</span>
-            </a>
-
-            <div class="dropdown-content">
-                <a href="curatenie-domiciliu.html">Curățenie la domiciliu</a>
-                <a href="curatenie-birouri.html">Curățenie birouri</a>
-                <a href="curatenie-santier.html">Curățenie după șantier</a>
-            </div>
-        </li>
-
         <li>
-            <a href="#calculator">Calculator preț</a>
+            <a href="#servicii">Servicii</a>
         </li>
 
         <li>
@@ -57,7 +50,7 @@
 
     </ul>
 
-    <button class="mobile-menu-btn" id="mobile-menu-btn">
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Deschide meniul">
         ☰
     </button>
 
@@ -82,15 +75,11 @@
         </h1>
 
         <p>
-            Servicii profesionale de curățenie pentru locuințe,
-            birouri și spații comerciale.
+            Servicii profesionale de curățenie pentru
+            birouri, spații logistice, depozite și spații comerciale.
         </p>
 
         <div class="hero-buttons">
-
-            <a href="#calculator" class="btn-main">
-                Calculează prețul
-            </a>
 
             <a href="#contact" class="btn-secondary">
                 Solicită o ofertă
@@ -147,36 +136,7 @@
 
     <div class="services-grid">
 
-
-        <a href="curatenie-domiciliu.html" class="service-card-link">
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🏠
-                </div>
-
-                <span class="service-number">
-                    01
-                </span>
-
-                <h3>
-                    Curățenie la domiciliu
-                </h3>
-
-                <p>
-                    Curățenie generală, întreținere periodică
-                    și servicii adaptate nevoilor locuinței tale.
-                </p>
-
-                <span class="service-link">
-                    Vezi serviciul →
-                </span>
-
-            </div>
-
-        </a>
-
+        <!-- 01 - BIROURI -->
 
         <a href="curatenie-birouri.html" class="service-card-link">
 
@@ -187,7 +147,7 @@
                 </div>
 
                 <span class="service-number">
-                    02
+                    01
                 </span>
 
                 <h3>
@@ -195,8 +155,8 @@
                 </h3>
 
                 <p>
-                    Un spațiu de lucru curat și organizat pentru
-                    angajați și clienți.
+                    Spații de lucru curate și organizate pentru
+                    angajați, colaboratori și clienți.
                 </p>
 
                 <span class="service-link">
@@ -208,6 +168,72 @@
         </a>
 
 
+        <!-- 02 - PARCURI LOGISTICE -->
+
+        <a href="parcuri-logistice.html" class="service-card-link">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🚚
+                </div>
+
+                <span class="service-number">
+                    02
+                </span>
+
+                <h3>
+                    Parcuri logistice
+                </h3>
+
+                <p>
+                    Curățenie profesională pentru spații logistice,
+                    zone operaționale și suprafețe extinse.
+                </p>
+
+                <span class="service-link">
+                    Vezi serviciul →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- 03 - DEPOZITE -->
+
+        <a href="depozite.html" class="service-card-link">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📦
+                </div>
+
+                <span class="service-number">
+                    03
+                </span>
+
+                <h3>
+                    Depozite
+                </h3>
+
+                <p>
+                    Întreținerea și igienizarea depozitelor pentru
+                    un mediu de lucru curat și organizat.
+                </p>
+
+                <span class="service-link">
+                    Vezi serviciul →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- 04 - DUPĂ CONSTRUCTOR -->
+
         <a href="curatenie-santier.html" class="service-card-link">
 
             <div class="service-card">
@@ -217,11 +243,11 @@
                 </div>
 
                 <span class="service-number">
-                    03
+                    04
                 </span>
 
                 <h3>
-                    După șantier
+                    Curățenie după constructor
                 </h3>
 
                 <p>
@@ -285,7 +311,8 @@
         <p>
             Punem accent pe seriozitate, punctualitate și
             rezultate vizibile, indiferent dacă este vorba
-            despre o locuință, un birou sau un spațiu după renovare.
+            despre un birou, un depozit, un spațiu logistic
+            sau un spațiu după renovare.
         </p>
 
 
@@ -325,122 +352,61 @@
     <div class="stats-container">
 
         <div class="stat-card">
-            <div class="stat-icon">✨</div>
-            <strong>100%</strong>
-            <span>Implicare în fiecare serviciu</span>
-        </div>
 
-        <div class="stat-card">
-            <div class="stat-icon">🧹</div>
-            <strong>3</strong>
-            <span>Tipuri de servicii</span>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon">⚡</div>
-            <strong>24/7</strong>
-            <span>Solicitări online</span>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon">✓</div>
-            <strong>100%</strong>
-            <span>Ofertă personalizată</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= CALCULATOR ================= -->
-
-<section id="calculator" class="calculator-section">
-
-    <div class="section-heading">
-
-        <span class="section-label">
-            CALCULATOR ONLINE
-        </span>
-
-        <h2>
-            Estimează rapid<br>
-            <span>costul curățeniei.</span>
-        </h2>
-
-        <p>
-            Selectează serviciul și suprafața spațiului.
-            Vei primi o estimare instantanee.
-        </p>
-
-    </div>
-
-
-    <div class="calc-container">
-
-        <div class="calc-block">
-
-            <label for="tip-serviciu">
-                Tipul serviciului
-            </label>
-
-            <select id="tip-serviciu">
-
-                <option value="10">
-                    Curățenie domiciliu — 10 lei/mp
-                </option>
-
-                <option value="12">
-                    Curățenie birouri — 12 lei/mp
-                </option>
-
-                <option value="18">
-                    Curățenie post-șantier — 18 lei/mp
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <div class="calc-block">
-
-            <label for="suprafata">
-                Suprafața spațiului
-                <strong>
-                    <span id="valoare-suprafata">50</span> mp
-                </strong>
-            </label>
-
-            <input
-                type="range"
-                id="suprafata"
-                min="20"
-                max="300"
-                value="50"
-                step="5"
-            >
-
-            <div class="range-values">
-                <span>20 mp</span>
-                <span>300 mp</span>
+            <div class="stat-icon">
+                ✨
             </div>
 
+            <strong>100%</strong>
+
+            <span>
+                Implicare în fiecare serviciu
+            </span>
+
         </div>
 
 
-        <div class="price-display">
+        <div class="stat-card">
 
-            <span>Preț estimativ</span>
+            <div class="stat-icon">
+                🧹
+            </div>
 
-            <strong>
-                <span id="pret-total">500</span> LEI
-            </strong>
+            <strong>4</strong>
 
-            <small>
-                *Prețul final poate varia în funcție de necesități.
-            </small>
+            <span>
+                Tipuri de servicii
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⚡
+            </div>
+
+            <strong>24/7</strong>
+
+            <span>
+                Solicitări online
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ✓
+            </div>
+
+            <strong>100%</strong>
+
+            <span>
+                Ofertă personalizată
+            </span>
 
         </div>
 
@@ -476,16 +442,15 @@
         <div class="cta-buttons">
 
             <a href="#contact" class="cta-button cta-primary">
-                <span>📩</span>
-                Cere o ofertă
-            </a>
 
-            <a href="#calculator" class="cta-button cta-secondary">
-                <span>🧮</span>
-                Calculează prețul
+                <span>📩</span>
+
+                Cere o ofertă
+
             </a>
 
         </div>
+
 
         <div class="cta-trust">
 
@@ -612,86 +577,93 @@
     </div>
 
 
-
     <div class="contact-container">
 
+
         <!-- INFORMAȚII CONTACT -->
+
         <div class="contact-info">
-
-            <div class="contact-badge">
-                📞 Contactează-ne
-            </div>
-
-            <h2>
-                Hai să discutăm despre
-                <span>curățenia ta.</span>
-            </h2>
-
-            <p class="contact-intro">
-                Ai nevoie de o curățenie profesională?
-                Trimite-ne câteva detalii și revenim rapid
-                cu o ofertă personalizată.
-            </p>
-
 
             <div class="contact-details">
 
+
                 <div class="contact-item">
-                    <div class="contact-icon">📞</div>
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
 
                     <div>
-                        <strong>Telefon</strong>
-                        <span>07XX XXX XXX</span>
+
+                        <strong>
+                            Telefon
+                        </strong>
+
+                        <span>
+                            0700 000 000
+                        </span>
+
                     </div>
+
                 </div>
 
 
                 <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
 
                     <div>
-                        <strong>Email</strong>
-                        <span>contact@ecoclean.ro</span>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <span>
+                            contact@ecoclean.ro
+                        </span>
+
                     </div>
+
                 </div>
 
 
                 <div class="contact-item">
-                    <div class="contact-icon">📍</div>
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
 
                     <div>
-                        <strong>Zona de lucru</strong>
-                        <span>București și împrejurimi</span>
+
+                        <strong>
+                            Zona de lucru
+                        </strong>
+
+                        <span>
+                            București și împrejurimi
+                        </span>
+
                     </div>
+
                 </div>
+
 
             </div>
-
-
-            <a
-                href="https://wa.me/40700000000"
-                target="_blank"
-                class="whatsapp-button"
-            >
-                <span class="whatsapp-icon">💬</span>
-
-                <span>
-                    <strong>Scrie-ne pe WhatsApp</strong>
-                    <small>Răspundem cât mai rapid</small>
-                </span>
-
-                <b>→</b>
-            </a>
 
         </div>
 
 
         <!-- FORMULAR -->
+
         <div class="contact-form-wrapper">
 
             <div class="form-header">
 
-                <span>Solicită o ofertă</span>
+                <span>
+                    Solicită o ofertă
+                </span>
 
                 <h3>
                     Spune-ne de ce ai nevoie
@@ -711,7 +683,9 @@
                 method="POST"
             >
 
+
                 <div class="form-row">
+
 
                     <div class="form-group">
 
@@ -746,6 +720,7 @@
 
                     </div>
 
+
                 </div>
 
 
@@ -777,16 +752,21 @@
                         name="serviciu"
                         required
                     >
+
                         <option value="">
                             Selectează serviciul
                         </option>
 
-                        <option value="Curățenie domiciliu">
-                            Curățenie domiciliu
-                        </option>
-
                         <option value="Curățenie birouri">
                             Curățenie birouri
+                        </option>
+
+                        <option value="Parcuri logistice">
+                            Parcuri logistice
+                        </option>
+
+                        <option value="Depozite">
+                            Depozite
                         </option>
 
                         <option value="Curățenie după constructor">
@@ -818,8 +798,15 @@
                     type="submit"
                     class="contact-submit"
                 >
-                    <span>Trimite solicitarea</span>
-                    <b>→</b>
+
+                    <span>
+                        Trimite solicitarea
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
                 </button>
 
 
@@ -836,16 +823,18 @@
 
 </section>
 
+
 <!-- ================= WHATSAPP ================= -->
 
 <a
     href="https://wa.me/40700000000"
     class="whatsapp-button"
     target="_blank"
+    rel="noopener noreferrer"
     aria-label="Contactează-ne pe WhatsApp"
+    title="Contactează-ne pe WhatsApp"
 >
     <span>💬</span>
-    WhatsApp
 </a>
 
 
@@ -854,6 +843,7 @@
 <footer>
 
     <div class="footer-content">
+
 
         <div>
 
@@ -875,10 +865,21 @@
                 Navigare
             </h3>
 
-            <a href="#acasa">Acasă</a>
-            <a href="#servicii">Servicii</a>
-            <a href="#calculator">Calculator preț</a>
-            <a href="#contact">Contact</a>
+            <a href="#acasa">
+                Acasă
+            </a>
+
+            <a href="#servicii">
+                Servicii
+            </a>
+
+            <a href="#despre-noi">
+                Despre noi
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
 
         </div>
 
@@ -889,16 +890,20 @@
                 Servicii
             </h3>
 
-            <a href="curatenie-domiciliu.html">
-                La domiciliu
-            </a>
-
             <a href="curatenie-birouri.html">
                 Birouri
             </a>
 
+            <a href="parcuri-logistice.html">
+                Parcuri logistice
+            </a>
+
+            <a href="depozite.html">
+                Depozite
+            </a>
+
             <a href="curatenie-santier.html">
-                După șantier
+                După constructor
             </a>
 
         </div>
@@ -937,4 +942,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
